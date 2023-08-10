@@ -243,3 +243,13 @@ export const ghostSettingsFields = graphql`
         }
     }
 `
+export const headerInfoFields = graphql`
+    fragment HeaderInfoFields on HeaderJson {
+        title
+        description
+        date
+        location
+        snu_logo
+        aiis_logo
+    }
+`

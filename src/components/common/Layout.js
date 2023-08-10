@@ -20,6 +20,7 @@ import "../../styles/app.css";
  */
 const DefaultLayout = ({ data, children, bodyClass, isHome }) => {
     const site = data.allGhostSettings.edges[0].node;
+    const headerData = data.allHeaderJson.edges[0].node;
     const twitterUrl = site.twitter
         ? `https://twitter.com/${site.twitter.replace(/^@/, ``)}`
         : null;
@@ -40,7 +41,8 @@ const DefaultLayout = ({ data, children, bodyClass, isHome }) => {
                 <header
                     className="site-head"
                     style={{
-                        ...(site.cover_image && {
+                        ...(site.cover_image &&
+                            {
                             backgroundImage: `url(${site.cover_image})`,
                         }),
                     }}
@@ -50,17 +52,24 @@ const DefaultLayout = ({ data, children, bodyClass, isHome }) => {
                             <div className="site-mast-left">
                                 <Link to="/">
                                     {site.logo ? (
-                                        <img
-                                            className="site-logo"
-                                            src={site.logo}
-                                            alt={site.title}
-                                        />
+                                        <div>
+                                            <img
+                                                className="site-logo"
+                                                src={headerData.snu_logo}
+                                                alt={site.title}
+                                            />
+                                            <img
+                                                className="site-logo"
+                                                src={headerData.aiis_logo}
+                                                alt={site.title}
+                                            />
+                                        </div>
                                     ) : (
                                         <GatsbyImage image={data.file.childImageSharp.gatsbyImageData} alt={site.title} />
                                     )}
                                 </Link>
                             </div>
-                            <div className="site-mast-right">
+                            {/* <div className="site-mast-right">
                                 {site.twitter && (
                                     <a
                                         href={twitterUrl}
@@ -101,33 +110,39 @@ const DefaultLayout = ({ data, children, bodyClass, isHome }) => {
                                         alt="RSS Feed"
                                     />
                                 </a>
-                            </div>
+                            </div> */}
                         </div>
                         {isHome ? (
                             <div className="site-banner">
                                 <h1 className="site-banner-title">
-                                    {site.title}
+                                    {headerData.title}
                                 </h1>
                                 <p className="site-banner-desc">
-                                    {site.description}
+                                    {headerData.description}
+                                </p>
+                                <p className="site-banner-desc">
+                                    {headerData.date}
+                                </p>
+                                <p className="site-banner-desc">
+                                    {headerData.location}
                                 </p>
                             </div>
                         ) : null}
                         <nav className="site-nav">
                             <div className="site-nav-left">
                                 {/* The navigation items as setup in Ghost */}
-                                <Navigation
+                                {/* <Navigation
                                     data={site.navigation}
                                     navClass="site-nav-item"
-                                />
+                                /> */}
                             </div>
                             <div className="site-nav-right">
-                                <Link
+                                {/* <Link
                                     className="site-nav-button"
                                     to="/about"
                                 >
                                     About
-                                </Link>
+                                </Link> */}
                             </div>
                         </nav>
                     </div>
@@ -135,16 +150,18 @@ const DefaultLayout = ({ data, children, bodyClass, isHome }) => {
 
                 <main className="site-main">
                     {/* All the main content gets inserted here, index.js, post.js */}
-                    {children}
+                    {/* {children} */}
+                    <p className="site-banner-desc">Under construction</p>
                 </main>
             </div>
 
+            {/* TODO: factor out as footer */}
             <div className="viewport-bottom">
                 {/* The footer at the very bottom of the screen */}
                 <footer className="site-foot">
                     <div className="site-foot-nav container">
                         <div className="site-foot-nav-left">
-                            <Link to="/">{site.title}</Link> © 2021 &mdash;
+                            {/* <Link to="/">{site.title}</Link> © 2021 &mdash;
                             Published with{" "}
                             <a
                                 className="site-foot-nav-item"
@@ -153,14 +170,15 @@ const DefaultLayout = ({ data, children, bodyClass, isHome }) => {
                                 rel="noopener noreferrer"
                             >
                                 Ghost
-                            </a>
+                            </a> */}
+                            주관: 서울대학교
                         </div>
-                        <div className="site-foot-nav-right">
+                        {/* <div className="site-foot-nav-right">
                             <Navigation
                                 data={site.navigation}
                                 navClass="site-foot-nav-item"
                             />
-                        </div>
+                        </div> */}
                     </div>
                 </footer>
             </div>
@@ -191,6 +209,13 @@ const DefaultLayoutSettingsQuery = (props) => (
   file(relativePath: {eq: "ghost-icon.png"}) {
     childImageSharp {
       gatsbyImageData(width: 30, height: 30, layout: FIXED)
+    }
+  }
+  allHeaderJson {
+    edges {
+      node {
+        ...HeaderInfoFields
+      }
     }
   }
 }
