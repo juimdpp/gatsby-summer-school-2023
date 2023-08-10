@@ -35,13 +35,14 @@
     "babel-eslint": "10.1.0",
     "eslint": "8.46.0",
     "eslint-plugin-ghost": "3.3.0",
-    "eslint-plugin-react": "7.33.1"
+    "eslint-plugin-react": "7.33.1",
+    "gh-pages": "^5.0.0"
   },
   "dependencies": {
     "@tryghost/helpers": "1.1.85",
     "@tryghost/helpers-gatsby": "2.0.16",
     "cheerio": "1.0.0-rc.11",
-    "gatsby": "4.25.7",
+    "gatsby": "^4.25.7",
     "gatsby-awesome-pagination": "0.3.8",
     "gatsby-plugin-advanced-sitemap": "2.1.0",
     "gatsby-plugin-catch-links": "4.15.0",
@@ -53,6 +54,7 @@
     "gatsby-plugin-sharp": "4.25.1",
     "gatsby-source-filesystem": "4.15.0",
     "gatsby-source-ghost": "5.0.2",
+    "gatsby-transformer-json": "^4.24.0",
     "gatsby-transformer-sharp": "4.15.1",
     "lodash": "4.17.21",
     "react": "18.2.0",
