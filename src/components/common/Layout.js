@@ -1,14 +1,16 @@
-import * as React from "react";
+import React, {useEffect, useState} from "react";
 import PropTypes from "prop-types";
 import { Helmet } from "react-helmet";
 import { Link, StaticQuery, graphql } from "gatsby";
 import { GatsbyImage } from "gatsby-plugin-image";
-
-import { Navigation } from ".";
+import Modal from "react-modal";
+import { Header, Navigation, Banner } from ".";
+import { useScrollYPosition } from 'react-use-scroll-position';
 import config from "../../utils/siteConfig";
 
 // Styles
 import "../../styles/app.css";
+import Schedule from "./Schedule";
 
 /**
  * Main layout component
@@ -18,142 +20,44 @@ import "../../styles/app.css";
  * styles, and meta data for each page.
  *
  */
+
+Modal.setAppElement('#___gatsby');
+
 const DefaultLayout = ({ data, children, bodyClass, isHome }) => {
-    const site = data.allGhostSettings.edges[0].node;
-    const headerData = data.allHeaderJson.edges[0].node;
-    const twitterUrl = site.twitter
-        ? `https://twitter.com/${site.twitter.replace(/^@/, ``)}`
-        : null;
-    const facebookUrl = site.facebook
-        ? `https://www.facebook.com/${site.facebook.replace(/^\//, ``)}`
-        : null;
+    const [open, setOpen] = useState(false);
+    const scrollY = typeof window !== 'undefined' ? useScrollYPosition() : 0,
+    isTop = scrollY !== 0;
+    const setColor = () => {
+        document.documentElement.style.setProperty('--header-bg', !isTop ? '#101012ff': 'white');
+        document.documentElement.style.setProperty('--header-text', isTop ? '#101012ff': 'white');
+    }
+
+    useEffect(() => {
+        setOpen(false);
+      }, [location, scrollY]);
+    useEffect(() => {
+        setColor();
+    }, [isTop])
+
+    const headerData = data.headerJson;
 
     return <>
-        <Helmet>
+        {/* <Helmet>
             <html lang={site.lang} />
             <style type="text/css">{`${site.codeinjection_styles}`}</style>
             <body className={bodyClass} />
-        </Helmet>
+        </Helmet> */}
 
         <div className="viewport">
             <div className="viewport-top">
-                {/* The main header section on top of the screen */}
-                <header
-                    className="site-head"
-                    style={{
-                        ...(site.cover_image &&
-                            {
-                            backgroundImage: `url(${site.cover_image})`,
-                        }),
-                    }}
-                >
-                    <div className="container">
-                        <div className="site-mast">
-                            <div className="site-mast-left">
-                                <Link to="/">
-                                    {site.logo ? (
-                                        <div>
-                                            <img
-                                                className="site-logo"
-                                                src={headerData.snu_logo}
-                                                alt={site.title}
-                                            />
-                                            <img
-                                                className="site-logo"
-                                                src={headerData.aiis_logo}
-                                                alt={site.title}
-                                            />
-                                        </div>
-                                    ) : (
-                                        <GatsbyImage image={data.file.childImageSharp.gatsbyImageData} alt={site.title} />
-                                    )}
-                                </Link>
-                            </div>
-                            {/* <div className="site-mast-right">
-                                {site.twitter && (
-                                    <a
-                                        href={twitterUrl}
-                                        className="site-nav-item"
-                                        target="_blank"
-                                        rel="noopener noreferrer"
-                                    >
-                                        <img
-                                            className="site-nav-icon"
-                                            src="/images/icons/twitter.svg"
-                                            alt="Twitter"
-                                        />
-                                    </a>
-                                )}
-                                {site.facebook && (
-                                    <a
-                                        href={facebookUrl}
-                                        className="site-nav-item"
-                                        target="_blank"
-                                        rel="noopener noreferrer"
-                                    >
-                                        <img
-                                            className="site-nav-icon"
-                                            src="/images/icons/facebook.svg"
-                                            alt="Facebook"
-                                        />
-                                    </a>
-                                )}
-                                <a
-                                    className="site-nav-item"
-                                    href={`https://feedly.com/i/subscription/feed/${config.siteUrl}/rss/`}
-                                    target="_blank"
-                                    rel="noopener noreferrer"
-                                >
-                                    <img
-                                        className="site-nav-icon"
-                                        src="/images/icons/rss.svg"
-                                        alt="RSS Feed"
-                                    />
-                                </a>
-                            </div> */}
-                        </div>
-                        {isHome ? (
-                            <div className="site-banner">
-                                <h1 className="site-banner-title">
-                                    {headerData.title}
-                                </h1>
-                                <p className="site-banner-desc">
-                                    {headerData.description}
-                                </p>
-                                <p className="site-banner-desc">
-                                    {headerData.date}
-                                </p>
-                                <p className="site-banner-desc">
-                                    {headerData.location}
-                                </p>
-                            </div>
-                        ) : null}
-                        <nav className="site-nav">
-                            <div className="site-nav-left">
-                                {/* The navigation items as setup in Ghost */}
-                                {/* <Navigation
-                                    data={site.navigation}
-                                    navClass="site-nav-item"
-                                /> */}
-                            </div>
-                            <div className="site-nav-right">
-                                {/* <Link
-                                    className="site-nav-button"
-                                    to="/about"
-                                >
-                                    About
-                                </Link> */}
-                            </div>
-                        </nav>
-                    </div>
-                </header>
-
-                <main className="site-main">
-                    {/* All the main content gets inserted here, index.js, post.js */}
-                    {/* {children} */}
-                    <p className="site-banner-desc">Under construction</p>
-                </main>
+                <Header data={headerData} isTop={isTop}/>
+                <Banner data={headerData} isHome={isHome}/>
             </div>
+            <main className="viewport-middle">
+                {/* All the main content gets inserted here, index.js, post.js */}
+                {/* {children} */}
+                <Schedule/>
+            </main>
 
             {/* TODO: factor out as footer */}
             <div className="viewport-bottom">
@@ -198,26 +102,33 @@ DefaultLayout.propTypes = {
 
 const DefaultLayoutSettingsQuery = (props) => (
     <StaticQuery
-        query={graphql`query GhostSettings {
-  allGhostSettings {
-    edges {
-      node {
-        ...GhostSettingsFields
-      }
-    }
-  }
-  file(relativePath: {eq: "ghost-icon.png"}) {
-    childImageSharp {
-      gatsbyImageData(width: 30, height: 30, layout: FIXED)
-    }
-  }
-  allHeaderJson {
-    edges {
-      node {
-        ...HeaderInfoFields
-      }
-    }
-  }
+        query={graphql`query GhostSettings
+        {
+            allGhostSettings {
+                edges {
+                    node {
+                        ...GhostSettingsFields
+                    }
+                }
+            }
+            file(relativePath: {eq: "ghost-icon.png"}) {
+                childImageSharp {
+                    gatsbyImageData(width: 30, height: 30, layout: FIXED)
+                }
+            }
+            headerJson {
+                title
+                description
+                cover_image
+                date
+                location
+                snu_logo
+                snu_title
+                snu_link
+                aiis_logo
+                aiis_title
+                aiis_link
+            }
 }
 `}
         render={(data) => <DefaultLayout data={data} {...props} />}

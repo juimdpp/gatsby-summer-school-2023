@@ -22,13 +22,14 @@ what's here to work the way you'd like it to.
 :root {
 
     /* Colours */
-    --color-primary: #3eb0ef;
-    --color-base: #15171A;
-    --color-secondary: #5B7A81;
+    --color-primary: #68c7d0;
+    --color-secondary: #48A2DD;
+    --color-base: black;
     --color-border: #c7d5d8;
     --color-bg: #f5f5f5;
 
     /* Fonts */
+    /* system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif; */
     --font-sans-serif: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
     --font-serif: Georgia, Times, serif;
     --font-mono: Menlo, Courier, monospace;
@@ -42,6 +43,9 @@ what's here to work the way you'd like it to.
     --margin: 2rem;
     --radius: 0.6rem;
 
+    /* Top */
+    --header-bg: #101012ff;
+    --header-text: white;
 }
 
 
@@ -528,6 +532,7 @@ h6 {
     max-width: 1120px;
     margin: 0 auto;
     padding: 0 4vw;
+    background-color: blue;
 }
 
 .content {
@@ -1160,3 +1165,198 @@ h6 {
   .kg-image-card.kg-width-wide + .kg-image-card.kg-width-wide {
     margin: -2.25em 0 3em;
   }
+
+  /* header ------------------------------------ */
+  .header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 0px;
+    background-position: center;
+    background-size: cover;
+    background: var(--header-bg, #101012ff);
+  }
+  .header-left {
+    margin-left: 20px;
+  }
+  .header-logo {
+    height: 60px;
+    margin: 10px;
+  }
+  .header-center {
+    margin-right: 20px;
+    display: flex;
+    flex-direction: row;
+  }
+  .header-divider {
+    margin-left: 25px;
+    margin-right: 25px;
+    color: gray;
+  }
+  .header-right {
+    margin-right: 30px;
+  }
+  .header-link {
+    font-size: 20px;
+    font-weight: 500;
+    color: var(--header-text, white);
+  }
+
+
+  /* Event ------------------------------------- */
+  .event {
+    display: flex;
+    flex-direction: row;
+    padding: 20px;
+    border-radius: 15px;
+    background-color: #F9F9F9;
+    border-style: solid;
+    border-color: #F9F9F9;
+    border-width: 1px;
+    margin: 10px;
+    font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+.event:hover{
+    background-color: #f5f5f5;
+    border-style: solid;
+    border-color: #d5d5d5;
+    border-width: 1px;
+}
+
+.event-time {
+    background-color: var(--color-primary);
+    border-radius: 20px;
+    color: white;
+    font-size: 16px;
+    font-weight: 500;
+    text-align: justify;
+    padding: 5px 15px 5px 15px;
+    margin-right: 10px;
+}
+
+.event-speaker {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+}
+.name {
+    font-size: 25px;
+    font-weight: 800;
+    color: black;
+}
+.affiliation {
+    font-size: 18px;
+    font-weight: 400;
+    margin-left: 10px;
+    margin-right: 20px;
+    color: black;
+}
+
+.event-title {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: var(--color-secondary);
+    font-size: 19px;
+    font-weight: 500;
+}
+
+
+/* Schedule */
+.schedule-header {
+    display: flex;
+    flex-direction: row;
+    margin: 40px 0px 30px 0px;
+    font-family: var(--font-sans-serif);
+}
+
+.schedule-day {
+    font-size: 25px;
+    font-weight: 800;
+    color: black;
+    margin-left: 20px;
+    margin-right: 20px;
+    text-shadow: 1px 1px 0px var(--color-secondary), 2px 2px 0px var(--color-primary);
+}
+
+.schedule-date {
+    font-size: 25px;
+    font-weight: 800;
+    color: var(--color-secondary);
+    text-shadow: 1px 1px 0px black, 2px 2px 0px var(--color-primary);
+
+}
+
+/* Detail Modal */
+.event-modal{
+    padding: 10px;
+}
+.event-modal-close {
+    float: right;
+    position: sticky;
+    top: 0;
+    height: 30px;
+    width: 30px;
+    padding: 0px;
+    margin: 0px;
+    background-color: white;
+}
+.event-modal-image{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    min-width: 200px;
+    width: 15%;
+    height: auto;
+}
+.event-modal-speaker-name {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 25px;
+    font-weight: 800;
+    color: black;
+    padding: 10px;
+    margin-top: 5px;
+}
+.event-modal-speaker-affiliation{
+    font-size: 20px;
+    font-weight: 600;
+    margin-left: 5px;
+}
+.event-modal-speaker-contact{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.event-modal-speaker-website {
+    margin: -5px 5px 10px 5px;
+}
+
+.event-modal-speaker-email {
+    margin: -5px 5px 10px 5px;
+}
+
+.event-modal-talk-title {
+    font-size: 25px;
+    font-weight: 800;
+    color: var(--color-secondary);
+    margin-top: 20px;
+    margin-bottom: 15px;
+}
+.event-modal-content-title {
+    font-size: 20px;
+    font-weight: 600;
+    color: var(--color-primary);
+}
+.event-modal-talk{
+    color: black;
+    font-size: 16px;
+    font-family: var(--font-sans-serif);
+    margin-bottom: 20px;
+}
