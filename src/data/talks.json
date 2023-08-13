@@ -1,0 +1,117 @@
+{
+    "1": {
+        "title": "Registration",
+        "speakerId": "",
+        "abstract": ""
+    },
+    "2": {
+        "title": "Opening Remark",
+        "speakerId": "",
+        "abstract": ""
+    },
+    "3": {
+        "title": "Towards NeRFs at scale",
+        "speakerId": "ParkJaeSik",
+        "abstract": "Neural Radiance Fields (NeRF) gained much attention from academia and industry due to its powerful capability for view synthesis and scene reconstruction from real images. However, many challenges remain regarding its accessibility and practicality. In this talk, I will introduce our recent attempts to solve such challenges. The first part shows our large-scale NeRF dataset, and then I will show our novel way to reduce storage burden significantly while having better image rendering quality. Later, I will introduce our most recent work designed to address challenging dynamic scenes."
+    },
+    "4": {
+        "title": "Uncertainty Learning for Trustworthy and Secure AI",
+        "speakerId": "박상돈",
+        "abstract": "Artificial Intelligence (AI) systems become deployed into practical and safety-critical systems that interact with humans due to their great achievements in performance. However, careless deployment raises concerns due to untrusting behaviors of AI systems. In this talk, I will discuss my efforts on learning and quantifying the uncertainty of predictions from AI models under distribution shift to enhance the trustworthiness of AI systems. In particular, I focus on a prediction set, which quantifies the uncertainty of predictions via a set of possible label predictions, where the set size represents predicted uncertainty. This prediction set comes with the correctness guarantee even under distribution shift from covariate shift to local distribution shift by Byzantine adversaries in redundant systems. The practical value of the correct prediction sets are demonstrated in computer vision and blockchain applications. In closing, I will discuss my recent work on uncertainty learning for generative language models."
+    },
+    "5": {
+        "title": "Lunch Break",
+        "speakerId": "",
+        "abstract": ""
+    },
+    "6": {
+        "title": "Toward Scalable Trusted Computing",
+        "speakerId": "LeeDaYeol",
+        "abstract": "The increasing need to protect data in use within untrusted remote execution environments has been driven by resource-intensive machine learning workloads and the widespread availability of cloud computing. However, traditional computer systems often struggle to provide a small trusted computing base (TCB). Trusted execution environments (TEEs) are a promising solution that vertically integrates hardware and software to provide stronger security guarantees while minimizing the size of the TCB. However, using TEEs to build high-performing and user-friendly real-world systems is challenging. In this talk, I will discuss the challenges and opportunities of using TEE as a building block for trusted computing at scale. I will begin with a gentle introduction to TEE and then discuss why it is a promising way of securing data in use. Then, I will talk about the main challenges of using TEE in real-world systems, including side-channel vulnerabilities, lack of flexibility, poor performance, and poor usability. I will introduce my previous research projects including the Keystone open-source framework for design space exploration, and formal reasoning on building a performant system. Lastly, I will discuss prospective efforts towards achieving efficient and usable trusted computing at scale."
+    },
+    "7": {
+        "title": "Homomorphic encryption: from theory to practice",
+        "speakerId": "KimMiRan",
+        "abstract": "Homomorphic encryption (HE) is an encryption method to enable arbitrary computation on encrypted data without decrypting them. It has emerged as one of the promising solutions to address privacy issues in computation over sensitive data. In this talk, I will introduce the recent development and progress on HE, especially focusing on the approximate HE on encrypted data. We conclude with the technical advance of HE-based privacy-preserving real-world applications such as machine learning and biomedical analysis."
+    },
+    "8": {
+        "title": "Coffee Break",
+        "speakerId": "",
+        "abstract": ""
+    },
+    "9": {
+        "title": "Untitled",
+        "speakerId": "JungTaeHo",
+        "abstract": ""
+    },
+    "10": {
+        "title": "Untitled",
+        "speakerId": "Students",
+        "abstract": "TODO"
+    },
+    "11": {
+        "title": "Coffee Break",
+        "speakerId": "",
+        "abstract": ""
+    },
+    "12": {
+        "title": "Social Gathering (small group per speaker/session)",
+        "speakerId": "",
+        "abstract": ""
+    },
+    "13": {
+        "title": "Registration",
+        "speakerId": "",
+        "abstract": ""
+    },
+    "14": {
+        "title": "Untitled",
+        "speakerId": "LeeMinA",
+        "abstract": ""
+    },
+    "15": {
+        "title": "Untitled",
+        "speakerId": "ChoeEunKyoung",
+        "abstract": ""
+    },
+    "16": {
+        "title": "Lunch Break",
+        "speakerId": "",
+        "abstract": ""
+    },
+    "17": {
+        "title": "Unleashing the Potential of In-network Computing",
+        "speakerId": "KimDaeHyeok",
+        "abstract": "Recent advances in programmable network hardware are creating a new computing paradigm called in-network computing. This paradigm paves the way for tasks traditionally performed by general-purpose servers - from network middleboxes to components of distributed systems - to be performed directly within the network. I argue that to fully realize its potential, we need resource elasticity and fault tolerance via higher-level abstractions.\nIn this talk, I demonstrate that in-network computing can be elastic and resilient by designing high-level abstractions and runtime systems that allow us to use compute and memory resources outside of a single device type - e.g., programmable switches - while hiding the complexities of dealing with device heterogeneity. I first introduce TEA, a framework that provides elastic memory by enabling memory-intensive in-switch applications, such as cloud-scale load balancers, to utilize DRAM on remote servers via virtual table abstraction. I then present ExoPlane and RedPlane, frameworks that support evolving in-network computing workloads and requirements -- i.e., serving multiple concurrent applications and making them fault-tolerant -- via infinite switch resource and one big fault-tolerant switch abstractions. Several systems in the industry are now using some of the technologies presented in this talk."
+    },
+    "18": {
+        "title": "Challenges and Opportunities with Smart Networking",
+        "speakerId": "ParkKyoungSoo",
+        "abstract": "Recent trend shows that the CPU advancement stagnates while the network bandwidth continues to improve rapidly. Off-the-shelf network interface cards (NICs) with 100s of Gbps and commodity switches capable of handling multi-Tbps of are already on the market, which requires redesign of the existing networked systems for high performance and low latency. Fortunately, the introduction of SmartNICs and programmable switches allows compute cycles and programmability at network, which presents an interesting new opportunity in the networked systems design.\nIn this talk, I’ll present a few experimental networked system designs that effectively harness SmartNICs and high-performance packet processing technologies. Specifically, I’ll show how one can scale the performance of video streaming with modern SmartNICs (IO-TCP[NSDI’23]), and briefly explain how the similar benefit is provided to L7 load balancers and short TCP transactions (AccelTCP[NSDI’20]). Then, I’ll share my on-going research works in scaling the performance of general L7 proxies, 5G cellular core networks, etc. if time permits."
+    },
+    "19": {
+        "title": "Coffee Break",
+        "speakerId": "",
+        "abstract": ""
+    },
+    "20": {
+        "title": "Untitled",
+        "speakerId": "KwonYoungJin",
+        "abstract": "In this talk, I would like to share my two experiences building two OSes for emerging cloud services.\n\nMemory disaggregation has replaced the landscape of cloud systems by physically separating compute and memory nodes, achieving improved utilization. As early efforts, kernel paging-based approaches offer transparent virtual memory abstraction for remote memory with paging schemes but suffer from expensive page fault handling. We revisit the paging-based approaches and challenges their performance in paging schemes. We posit that the overhead of the paging-based approaches \nis not a fundamental limitation. We propose DiLOS, a new library operating system~(LibOS) specialized for paging-based memory disaggregation. We have revamped the page fault handler to get away with the swap cache and incorporated known techniques in our prefetcher, page manager, and communication module for performance optimization. Furthermore, we provide APIs to augment the LibOS with application semantics.\n\nOS containers have become a foundational component of cloud systems, offering benefits such as encapsulating the kernel, user libraries, \nand applications to reduce operational costs and enhance manageability. While OS containers present the illusion of isolated kernel code and states for processes, they share the same underlying kernel, raising concerns regarding security and fault isolation. Previous solutions to address the isolation concerns are using virtual-machine-based systems, leveraging hardware-based isolation, but this approach often introduces significant performance overhead. In response, we introduce a new approach, CofferOS, that leverages Rust’s safety features to enhance container isolation. This paper introduces a Coffer abstraction, implemented as a class, which ensures that instances never directly access the code and states of others. This isolation principle is achieved by encapsulating kernel code within each Coffer instance. CofferOS, a new OS, containerizes kernels and processes within Coffer instances, strengthening security and fault isolation compared \nto the traditional OS container."
+    },
+    "21": {
+        "title": "Untitled",
+        "speakerId": "Students",
+        "abstract": ""
+    },
+    "22": {
+        "title": "Coffee Break",
+        "speakerId": "",
+        "abstract": ""
+    },
+    "23": {
+        "title": "Social Gathering (small group per speaker/session)",
+        "speakerId": "",
+        "abstract": ""
+    }
+}

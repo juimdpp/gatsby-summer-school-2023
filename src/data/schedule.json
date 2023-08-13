@@ -1,0 +1,221 @@
+[
+    {
+        "date": "August 30th",
+        "dayOfWeek": "Wednesday",
+        "content": [
+            {
+                "id": 1,
+                "session": "",
+                "sessionChair": "",
+                "startTime": "09:30",
+                "endTime": "09:50",
+                "title": "Registration",
+                "speakerId": ""
+            },
+            {
+                "id": 2,
+                "session": "",
+                "sessionChair": "",
+                "startTime": "09:50",
+                "endTime": "10:00",
+                "title": "Opening remark",
+                "speakerId": ""
+            },
+            {
+                "id": 3,
+                "session": "AI",
+                "sessionChair": "주한별",
+                "startTime": "10:00",
+                "endTime": "10:50",
+                "title": "Towards NeRFs at scale",
+                "speakerId": "ParkJaeSik"
+            },
+            {
+                "id": 4,
+                "session": "AI",
+                "sessionChair": "주한별",
+                "startTime": "10:50",
+                "endTime": "11:40",
+                "title": "Uncertainty Learning for Trustworthy and Secure AI",
+                "speakerId": "ParkSangDon"
+            },
+            {
+                "id": 5,
+                "session": "",
+                "sessionChair": "",
+                "startTime": "11:40",
+                "endTime": "13:00",
+                "title": "Lunch Break",
+                "speakerId": ""
+            },
+            {
+                "id": 6,
+                "session": "Security I",
+                "sessionChair": "송용수",
+                "startTime": "13:00",
+                "endTime": "13:50",
+                "title": "Toward Scalable Trusted Computing",
+                "speakerId": "LeeDaYeol"
+            },
+            {
+                "id": 7,
+                "session": "Security I",
+                "sessionChair": "송용수",
+                "startTime": "13:50",
+                "endTime": "14:40",
+                "title": "Homomorphic encryption: from theory to practice",
+                "speakerId": "KimMiRan"
+            },
+            {
+                "id": 8,
+                "session": "",
+                "sessionChair": "",
+                "startTime": "14:40",
+                "endTime": "15:00",
+                "title": "Coffee Break",
+                "speakerId": ""
+            },
+            {
+                "id": 9,
+                "session": "Security II & Students",
+                "sessionChair": "송용수",
+                "startTime": "15:00",
+                "endTime": "15:50",
+                "title": "Untitled",
+                "speakerId": "JungTaeHo"
+            },
+            {
+                "id": 10,
+                "session": "Security II & Students",
+                "sessionChair": "송용수",
+                "startTime": "15:50",
+                "endTime": "16:35",
+                "title": "Untitled",
+                "speakerId": "Students"
+            },
+            {
+                "id": 11,
+                "session": "",
+                "sessionChair": "",
+                "startTime": "16:35",
+                "endTime": "16:55",
+                "title": "Coffee Break",
+                "speakerId": ""
+            },
+            {
+                "id": 12,
+                "session": "",
+                "sessionChair": "",
+                "startTime": "16:55",
+                "endTime": "",
+                "title": "Social Gathering (small group per speaker/session)",
+                "speakerId": ""
+            }
+        ]
+    },
+    {
+        "date": "August 31st",
+        "dayOfWeek": "Thursday",
+        "content": [
+            {
+                "id": 13,
+                "session": "",
+                "sessionChair": "",
+                "startTime": "09:30",
+                "endTime": "09:50",
+                "title": "Registration",
+                "speakerId": ""
+            },
+            {
+                "id": 14,
+                "session": "HCI/NLP",
+                "sessionChair": "",
+                "startTime": "10:00",
+                "endTime": "10:50",
+                "title": "Untitled",
+                "speakerId": "LeeMinA"
+            },
+            {
+                "id": 15,
+                "session": "HCI/NLP",
+                "sessionChair": "",
+                "startTime": "10:50",
+                "endTime": "11:40",
+                "title": "Untitled",
+                "speakerId": "ChoeEunKyoung"
+            },
+            {
+                "id": 16,
+                "session": "",
+                "sessionChair": "",
+                "startTime": "11:40",
+                "endTime": "13:00",
+                "title": "Lunch Break",
+                "speakerId": ""
+            },
+            {
+                "id": 17,
+                "session": "Network",
+                "sessionChair": "이영기",
+                "startTime": "13:00",
+                "endTime": "13:50",
+                "title": "Unleashing the Potential of In-network Computing",
+                "speakerId": "KimDaeHyeok"
+            },
+            {
+                "id": 18,
+                "session": "Security I",
+                "sessionChair": "송용수",
+                "startTime": "13:50",
+                "endTime": "14:40",
+                "title": "Challenges and Opportunities with Smart Networking",
+                "speakerId": "ParkKyoungSoo"
+            },
+            {
+                "id": 19,
+                "session": "",
+                "sessionChair": "",
+                "startTime": "14:40",
+                "endTime": "15:00",
+                "title": "Coffee Break",
+                "speakerId": ""
+            },
+            {
+                "id": 20,
+                "session": "System & Students",
+                "sessionChair": "이영기",
+                "startTime": "15:00",
+                "endTime": "15:50",
+                "title": "Designing and building new OS  for cloud services",
+                "speakerId": "KwonYoungJin"
+            },
+            {
+                "id": 21,
+                "session": "System & Students",
+                "sessionChair": "이영기",
+                "startTime": "15:50",
+                "endTime": "16:35",
+                "title": "Untitled",
+                "speakerId": "Students"
+            },
+            {
+                "id": 22,
+                "session": "",
+                "sessionChair": "",
+                "startTime": "16:35",
+                "endTime": "16:55",
+                "title": "Coffee Break",
+                "speakerId": ""
+            },
+            {
+                "id": 23,
+                "session": "",
+                "sessionChair": "",
+                "startTime": "16:55",
+                "endTime": "",
+                "title": "Social Gathering (small group per speaker/session)",
+                "speakerId": ""
+            }
+        ]
+    }
+]

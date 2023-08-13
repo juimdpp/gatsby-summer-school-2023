@@ -1,0 +1,101 @@
+{
+    "ParkJaeSik": {
+        "speakerEnglish": "Park Jae Sik",
+        "speakerKorean": "박재식",
+        "image": "https://jaesik.info/source/members/jaesik_2023.jpg",
+        "email": "jaesik.park@postech.ac.kr",
+        "website": "https://jaesik.info/",
+        "affiliation": "Seoul National University",
+        "bio": "Jaesik Park is currently a faculty member at POSTECH, and he will join as an Assistant Professor at Seoul National University in Sep. 2023. He received his Bachelor’s degree from Hanyang University (2009), and he received his Master’s degree (2011) and Ph.D. degree (2015) from KAIST. Before joining POSTECH, he worked at Intel intelligent systems lab (2015-2019) and co-created the Open3D library. His research interests include image synthesis, 3D perception, and computer vision topics. He serves as a program committee at prestigious computer vision conferences, such as ICCV, CVPR, and ECCV."
+    },
+    "ParkSangDon": {
+        "speakerEnglish": "Park Sang Don",
+        "speakerKorean": "박상돈",
+        "image": "https://sangdon.github.io/assets/images/sangdon_pic.jpg",
+        "email": "sangdon@postech.ac.kr",
+        "website": "https://sangdon.github.io/",
+        "affiliation": "POSTECH",
+        "bio": "Sangdon Park is an assistant professor at POSTECH CSE/GSAI. Previously, he was a postdoctoral researcher at the Georgia Institute of Technology, mentored by Taesoo Kim. He earned his Ph.D. in Computer and Information Science from the University of Pennsylvania in 2021, where he was advised by Insup Lee and Osbert Bastani. His research interest focuses on designing trustworthy AI systems by understanding from theory to implementation and by considering practical applications in computer security, computer vision, robotics, cyber-physical systems, and natural language processing."
+    },
+    "LeeDaYeol": {
+        "speakerEnglish": "Lee Da Yeol",
+        "speakerKorean": "이다열",
+        "image": "https://dayeol.github.io/images/me.png",
+        "email": "dayeol@berkeley.edu",
+        "website": "https://dayeol.github.io/",
+        "affiliation": "Anyscale Inc.",
+        "bio": "Dayeol Lee is a software engineer at Anyscale, Inc., with a background in system security, trusted computing, and computer architecture. He earned his Ph.D. in Electrical Engineering and Computer Sciences from the University of California, Berkeley, where he contributed to computer systems and security research. Dayeol holds a BS and an MS in Computer Science and Engineering from Pohang University of Science and Technology. He is passionate about advancing cutting-edge technologies and ensuring the security of large-scale computing systems. He is soon joining TikTok's Privacy Innovation Lab (PIL) as a senior research scientist. To get in touch, please email dayeolee@gmail.com."
+    },
+    "KimMiRan": {
+        "speakerEnglish": "Kim Mi Ran",
+        "speakerKorean": "김미란",
+        "image": "https://k-miran.github.io/images/Miran.jpg",
+        "email": "miran@hanyang.ac.kr",
+        "website": "https://k-miran.github.io/",
+        "affiliation": "Hanyang University",
+        "bio": "Miran Kim is an assistant professor of the Department of Mathematics and affiliated with the Department of Computer Science at Hanyang University. Miran Kim received her Ph.D. in mathematical sciences at Seoul National University, Korea, in 2017. Her research focuses on the design of novel strategies to enable secure and privacy-preserving data analysis using homomorphic encryption. She has extensive experience in the implementation of efficient protocols for data query processing, genome analysis, and machine learning."
+    },
+    "JungTaeHo": {
+        "speakerEnglish": "Jung Tae Ho",
+        "speakerKorean": "정태호",
+        "image": "https://sites.nd.edu/taeho-jung/files/2017/06/Taeho-Jung-5720-768x960.jpg",
+        "email": "tjung@nd.edu",
+        "website": "https://sites.nd.edu/taeho-jung/",
+        "affiliation": "University of Notre Dame",
+        "bio": ""
+    },
+    "LeeMinA": {
+        "speakerEnglish": "Lee Min A",
+        "speakerKorean": "이민아",
+        "image": "https://brushbrushbrushyourteeth.files.wordpress.com/2022/07/md_25-2.jpg",
+        "email": "mnlee@uchicago.edu",
+        "website": "https://minalee.info/mina-lee/",
+        "affiliation": "University of Chicago",
+        "bio": ""
+    },
+    "ChoeEunKyoung": {
+        "speakerEnglish": "Choe Eun Kyoung",
+        "speakerKorean": "최은경",
+        "image": "https://terpconnect.umd.edu/~choe/images/ekc-profile-03.2016.jpg",
+        "email": "choe@umd.edu",
+        "website": "https://terpconnect.umd.edu/~choe/index.html",
+        "affiliation": "University of Maryland",
+        "bio": ""
+    },
+    "KimDaeHyeok": {
+        "speakerEnglish": "Kim Dae Hyeok",
+        "speakerKorean": "김대혁",
+        "image": "https://github.com/juimdpp/summer-school-2023/assets/60267222/bb66dad7-c39d-4705-90bc-45f199d9e717",
+        "email": "daehyeok@cs.utexas.edu",
+        "website": "https://daehyeok.kim/",
+        "affiliation": "University of Texas Austim",
+        "bio": "Daehyeok Kim is an Assistant Professor of Computer Science at the University of Texas at Austin. Prior to joining UT Austin, he was a senior researcher at Microsoft Research and in the Office of the CTO in the Azure for Operators group. He received his Ph.D. from Computer Science Department at Carnegie Mellon University. His research interests lie at the intersection of systems and networking, with a focus on building software systems that improve the performance, efficiency, and resilience of data- and network-intensive applications running on emerging programmable infrastructures. He is a recipient of the Microsoft Research Ph.D. Fellowship."
+    },
+    "ParkKyoungSoo": {
+        "speakerEnglish": "Park Kyoung Soo",
+        "speakerKorean": "박경수",
+        "image": "https://github.com/juimdpp/summer-school-2023/assets/60267222/41e37717-8d67-4d8a-a3e9-e0fbc559a5d2",
+        "email": "kyoungsoo@kaist.ac.kr",
+        "website": "https://www.ndsl.kaist.edu/~kyoungsoo/",
+        "affiliation": "Seoul National University",
+        "bio": "KyoungSoo Park is a professor in the school of Electrical Engineering at KAIST. He received his B.S. degree from Seoul National University in 1997, and his M.A. and Ph.D. degrees from Princeton University in 2004 and 2007, respectively, all in computer science. His research interest is focused on high-performance packet processing, scalable network stack and server architectures, and networking/systems support for distributed deep learning. He used to be the main architect of CoBlitz (and the CTO of its startup), a scalable large-file content distribution network (CDN) that provides CDN services as part of the Akamai networks. His team won USENIX NSDI Community Award in 2014 (mTCP) and the USENIX NSDI Best Paper Award in 2017 (mOS)."
+    },
+    "KwonYoungJin": {
+        "speakerEnglish": "Kwon Young Jin",
+        "speakerKorean": "권영진",
+        "image": "https://lh6.googleusercontent.com/IvhKbzKuW8A6KCjvJ0Vf241qv0aNGno4lR1H3qAMKiQ4xW3DvSSqBmb6XjU-iwG-RY3aV9eN2wXREWXOkCFEa0aW-c8mj5xayqEdkEZ7qWEpVwwy=w1280",
+        "email": "yjkwon@kaist.ac.kr",
+        "website": "https://sites.google.com/view/yjkwon/home",
+        "affiliation": "KAIST",
+        "bio": "권영진은 카이스트 전산학부 부교수이다. 그는 2019년에 카이스트에 조교수로 부임하였고 2022년 9월부터 부교수로 재직 중이다. 2020년 우수한 연구성과를 인정받아 이원 조교수로 임명되었으며 2021년 이수영 교육학습혁신 우수상을 수여받았다. 그는 2019년 Texas Austin 대학에서 박사학위를, 카이스트에서 석사학위를, 서강대학교에서 학사 학위을 취득하였다. 그가 카이스트에 있는 동안 수행한 연구는 아키택처 최고의 분야의 컨퍼런스인 ISCA에 채택이 되었는데, 이는 한국 학교에서 최초로 개재된 논문이다. 그는 Texas Austin 대학에서 2012년에서 2015년 동안 MCD fellowship을 받았으며, \n2018년 USENIX Annual Technical Conference 에서 최우수 논문상, 2020년 ACM Symposium on Operating Systems Principles 최우수 논문상(아시아 최초)을 수여받았다.\n그의 연구 주제는 운영체제, 인공지능 시스템, 컴퓨터 시스템 보안 분야이다. 그의 주요 연구는 하드웨어 혹은 유저 프로그램과 서로 상호작용을 하는 컴퓨터 시스템들을 설계하고 구현하는 것이다. \n그의 연구들의 예로는 새로운 메모리 기술을 지원하기 위한 메모리와 스토리지 시스템들, 인공지능 프로그램을 수행하기 위한 플랫폼, IoT장치들을 활용하기 위한 인공지능 시스템, 운영체제에 발생할 수 있는 레이스 버그들을 찾는 툴들을 들 수 있다. \n그의 메모리 연구는 VMware에서 인정을 받아 그 기술이 VMware 하이버바이져에 적용되어 있으며, VMware에 인턴으로 참여하여 그 최초 구현을 함께 하였다."
+    },
+    "Students" : {
+        "speakerEnglish": "Kim Hyun Soo, Kim Hyun Soo, Kim Hyun Soo",
+        "speakerKorean": "김현수, 김현수, 김현수",
+        "image": "",
+        "email": "",
+        "website": "",
+        "affiliation": "",
+        "bio": ""
+    }
+}
