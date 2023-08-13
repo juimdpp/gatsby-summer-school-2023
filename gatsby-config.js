@@ -75,6 +75,7 @@ module.exports = {
         {
             resolve: `gatsby-source-filesystem`,
             options: {
+                name: `data`,
                 path: path.join(__dirname, `src`, `data`),
             },
         },
@@ -207,5 +208,13 @@ module.exports = {
         `gatsby-plugin-catch-links`,
         `gatsby-plugin-react-helmet`,
         `gatsby-plugin-offline`,
+        {
+            resolve: "gatsby-plugin-anchor-links",
+            options: {
+              offset: 0,
+              duraction: 500
+            }
+        },
+        `gatsby-plugin-modal-routing`
     ],
 };
